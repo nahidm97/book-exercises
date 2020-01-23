@@ -18,7 +18,7 @@ elevent <- (all_numbers[11])
 # Create a vector `some_numbers` that contains the 2nd through the 5th elements 
 # of `all_numbers`
 some_numbers <- c(all_numbers[2]:all_numbers[5])
-
+print(some_numbers)
 
 # Create a vector `even` that holds the even numbers from 1 to 100
 even <- seq(from = 2, to = 100, by = 2)
