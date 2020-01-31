@@ -65,4 +65,4 @@ mean(salaries[salaries$raise == FALSE, "adjustments"])
 ## how you generated the salaries?
 
 # Write a .csv file of your salary data to your working directory
-
+write.csv(salaries, "Salariesdataframe.csv")
