@@ -36,7 +36,7 @@ extracting <- fromJSON(extracting)
 View(extracting)
 
 # How many (public) repositories does the organization have?
-length(extracting)
+nrow(extracting)
 
 # Now a second query:
 # Create a variable `search_endpoint` that stores the endpoint used to search 
