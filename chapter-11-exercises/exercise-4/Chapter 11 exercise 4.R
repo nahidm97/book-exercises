@@ -55,5 +55,8 @@ pull(avg_delayed)
 flights %>% 
   filter(dest == "SEA") %>% 
   select(origin, dest, air_time) %>%
-  summarize(avg_time = mean(air_time, na.rm = TRUE), minimum_time = min(air_time, na.rm = TRUE), maximum_time = max(air_time, na.rm = TRUE)) %>% 
+  summarize(
+            avg_time = mean(air_time, na.rm = TRUE),
+            minimum_time = min(air_time, na.rm = TRUE),
+            maximum_time = max(air_time, na.rm = TRUE)) 
   pull(avg_time, minimum_time, maximum_time)
